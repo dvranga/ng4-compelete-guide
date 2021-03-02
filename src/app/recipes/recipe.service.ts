@@ -31,15 +31,15 @@ export class RecipeService{
         ])
       ];
 
-      getRecipe(){
+      getRecipes(){
           return this.recipes.slice();
       }
 
-      getRecip(index:number){
+      getRecipe(index:number){
           return this.recipes[index];
       }
 
-      addIngredientTOShoppingList(ingredients:Ingredient[]){
+      addIngredientsToShoppingList(ingredients:Ingredient[]){
         this.shoppingListService.addIngredients(ingredients);
       }
     
